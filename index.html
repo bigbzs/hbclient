@@ -1,0 +1,17 @@
+<h2>Enter a URL</h2>
+<input type="text" id="urlInput" placeholder="Enter URL here">
+<button onclick="generateLink()">Create Link</button>
+
+<p id="linkOutput"></p>
+
+<script>
+  function generateLink() {
+    var input = document.getElementById("urlInput").value;
+    var output = document.getElementById("linkOutput");
+    if (input.trim() !== "") {
+      output.innerHTML = `<a href="${input}" target="_blank">${input}</a>`;
+    } else {
+      output.innerHTML = "Please enter a valid URL.";
+    }
+  }
+</script>
