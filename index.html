@@ -1,8 +1,36 @@
-<h2>Enter a URL</h2>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  input {
+    padding: 10px;
+    font-size: 16px;
+  }
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  p, a {
+    font-size: 18px;
+    margin-top: 10px;
+    display: block;
+  }
+</style>
+
+<h2>🧼 Enter a URL 🧼</h2>
 <input type="text" id="urlInput" placeholder="Enter URL here">
 <button onclick="generateLink()">Create Link</button>
 
 <p id="linkOutput"></p>
+
+<p>🧼 <a href="https://www.haxball.com/play" target="_blank">Play HaxBall</a> 🧼</p>
+<p>🧼 <a href="https://www.haxball.com/playerauth" target="_blank">HaxBall Player Authentication</a> 🧼</p>
 
 <script>
   function generateLink() {
@@ -13,6 +41,5 @@
     } else {
       output.innerHTML = "Please enter a valid URL.";
     }
-    innerHTML = `<a href="${https://www.haxball.com/play}" target="_blank">${https://www.haxball.com/play}</a>`;
   }
 </script>
